@@ -1,0 +1,57 @@
+package assignment;
+import java.util.Scanner;
+class Assignment1b {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		float total;
+		float dis;
+		float last;
+		
+		
+		Scanner item=new Scanner(System.in);
+		
+		System.out.println("Enter the number of items :");
+		int jumlah=item.nextInt();
+		
+		System.out.println("Enter the price of first item :RM" );
+		float price=item.nextFloat();
+		
+		System.out.println("Enter the quantity of first item :");
+		int quantity=item.nextInt();
+		
+		System.out.println("Enter the price of second item :RM" );
+		float price2=item.nextFloat();
+		
+		System.out.println("Enter the quantity of second item :");
+		int quantity2=item.nextInt();
+		
+		System.out.println("Enter the price of third item :RM" );
+		float price3=item.nextFloat();
+		
+		System.out.println("Enter the quantity of third item :");
+		int quantity3=item.nextInt();
+		
+		total = price + price2 + price3;
+		
+		System.out.println("total price : RM" + total);
+		
+		if(total<100)
+		{
+			dis= (total/100)*10;
+			System.out.println("Discount received : RM " + dis);
+		}
+		else
+		{
+			dis= (total/100)*20;
+			System.out.println("Discount received : RM " + dis);
+		}
+		
+		last = total-dis;
+		System.out.println("Price to be paid : RM " + last);
+	
+
+	}
+
+}
